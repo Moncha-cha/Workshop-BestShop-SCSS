@@ -18,7 +18,7 @@ body {
     padding: 0px 2rem;
     box-shadow: 0px 3px 6px #00000029;
     height: 15vh;
-    
+    position: relative;
 
     .logo-bestshop {
         font-size: 2rem;
@@ -51,6 +51,9 @@ label .line {
 ol {
     right: 73px;
     top: 120%;
+    position: absolute;
+    z-index: 1;
+    
 }
 
 ol li {
@@ -60,10 +63,12 @@ ol li {
     font-family: $highlight-font;
     font-size: 1.2rem;
     cursor: pointer;
+    
 
     a {
         text-decoration: none;
         color: $main-font-color;
+        
     }
 }
 
@@ -74,7 +79,8 @@ input[type="checkbox"] {
 
 .hamburger ol {
     display: none;
-    position: absolute
+    position: absolute;
+
 }
 
 input[type="checkbox"]:checked + ol {
@@ -82,3 +88,61 @@ input[type="checkbox"]:checked + ol {
 }
 
 
+// SELL MORE
+
+/* <section class="main">
+        <div class="intro">
+            <h1>Sell More!</h1>
+            <p>Open shop on our platform and increase your sales</p>
+            <button>Open your shop</button>
+        </div>  */
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../Images_icons/Background.png");
+    background-size: content;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 2rem;
+    height: 100vh;
+    margin-top: 6rem;
+
+    h1 {
+        font-size: 3rem;
+        font-weight: 400;
+        font-family: $highlight-font;
+        color: $main-font-color;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: $base-font;
+        color: $base-font;
+        margin-bottom: 2rem;
+    }
+
+}
+
+.main button {
+    padding: 1.5rem 4rem;
+    background-color: $primary-color;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: $highlight-font;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 5px 10px 14px #07ACE629;
+    cursor: pointer;
+}
