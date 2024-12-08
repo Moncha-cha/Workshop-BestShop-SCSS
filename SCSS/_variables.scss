@@ -14,3 +14,9 @@ $highlight-font: "Raleway", sans-serif;
 $base-font: "Open Sans", sans-serif;
 $main-font-color: black;
 $side-font-color: #A5A5A5;
+
+// GRID
+
+$columns: 12;
+$base-column-width: math.div(100%, 12);
+$global-max-width: 60em;
