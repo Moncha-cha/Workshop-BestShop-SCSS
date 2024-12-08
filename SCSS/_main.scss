@@ -87,16 +87,6 @@ input[type="checkbox"]:checked + ol {
     display: block;
 }
 
-
-// SELL MORE
-
-/* <section class="main">
-        <div class="intro">
-            <h1>Sell More!</h1>
-            <p>Open shop on our platform and increase your sales</p>
-            <button>Open your shop</button>
-        </div>  */
-
 .main {
     width: 100%;
     height: 100vh;
@@ -113,7 +103,7 @@ input[type="checkbox"]:checked + ol {
     flex-direction: column;
     align-items: center;
     padding: 0px 2rem;
-    height: 100vh;
+    height: 70vh;
     margin-top: 6rem;
 
     h1 {
@@ -122,6 +112,7 @@ input[type="checkbox"]:checked + ol {
         font-family: $highlight-font;
         color: $main-font-color;
         margin-bottom: 2rem;
+        
     }
 
     p {
@@ -130,6 +121,7 @@ input[type="checkbox"]:checked + ol {
         font-family: $base-font;
         color: $base-font;
         margin-bottom: 2rem;
+        text-align: center;
     }
 
 }
@@ -146,3 +138,54 @@ input[type="checkbox"]:checked + ol {
     box-shadow: 5px 10px 14px #07ACE629;
     cursor: pointer;
 }
+
+// STATISTICS
+
+/* <section class="statistics">
+       <h2>The most popular sales platform in country</h2> 
+        <div class="row">
+            <div class="col-4">
+                <img src="../Workshop-BestShop-SCSS/Images_icons/Person.svg" alt="user-icon">
+                <h3>100000+</h3>
+                <p>daily entries</p>
+            </div>
+            <div class="col-4">
+                <img src="../Workshop-BestShop-SCSS/Images_icons/Eye.svg" alt="eye-icon">
+                <h3>2000000+</h3>
+                <p>seen products every day</p>
+            </div>
+            <div class="col-4">
+                <img src="../Workshop-BestShop-SCSS/Images_icons/Catalog.svg" alt="catalog-icon">
+                <h3>10000+</h3>
+                <p>added posts daily</p>
+            </div>
+        </div>
+    </section> */
+
+.statistics {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.statistics h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: $highlight-font;
+    color: $main-font-color;
+    margin: 2rem;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
